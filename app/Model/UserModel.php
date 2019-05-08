@@ -8,4 +8,5 @@ class UserModel extends Model
 {
     //
     protected $table="api_user";
+    public $timestamps=false;
 }
