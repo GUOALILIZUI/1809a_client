@@ -36,3 +36,18 @@ Route::get('cenTer','User\UserRegController@cenTer')->Middleware(['centent','req
 Route::resource('goods',GoodsController::class);
 
 
+
+//5.9
+Route::get('oneIndex','One\OneController@oneIndex');
+Route::post('oneInfo','One\OneController@oneInfo');
+Route::get('actii','One\OneController@actii');
+Route::get('rsaTest','One\OneController@rsaTest');
+Route::get('sign','One\OneController@sign');
+
+
+//5.13周考
+Route::get('regindex','Register\RegController@regindex');
+Route::post('regInfo','Register\RegController@regInfo');
+Route::get('token','Register\RegController@token');
+Route::get('a','Register\RegController@a');
+
