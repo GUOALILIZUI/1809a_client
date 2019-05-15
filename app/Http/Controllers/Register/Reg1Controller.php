@@ -18,6 +18,7 @@ class RegController extends Controller
      * @param Request $request
      * 注册
      */
+
     public function regInfo(Request $request){
         $user_name=$request->input('user_name');
         $email=$request->input('email');
@@ -32,60 +33,37 @@ class RegController extends Controller
         ];
 
         $str=json_encode($data);
-//        $url='http://lumen.1809a.com/regInfo';
-        $url='http://alili.gege12.vip/regInfo';
+        $k=openssl_get_privatekey('file://'.storage_path('app/keys/private.pem'));
+        openssl_private_encrypt($str,$en_data,$k);
+        $newStr=base64_encode($en_data);
+//        print_r($a);exit;
+        $url='http://lumen_1809a.com/regInfo';
         $urlInfo=curl_init();
         curl_setopt($urlInfo,CURLOPT_URL,$url);
         curl_setopt($urlInfo,CURLOPT_POST,1);
         //禁止浏览器输出 变量
         curl_setopt($urlInfo, CURLOPT_RETURNTRANSFER,1);
-        curl_setopt($urlInfo,CURLOPT_POSTFIELDS,$str);
+        curl_setopt($urlInfo,CURLOPT_POSTFIELDS,$newStr);
         $cc=curl_exec($urlInfo);
         print_r($cc);
         curl_close($urlInfo);
+
+
+
+
+
     }
 
-    /**
-     * token
-     */
     public function token(){
-        /*
-       $info=$_GET;
-        $lkey='zk_token'.$info['id'];
-        Redis::set($lkey,$info['token']);
-        Redis::expire($lkey,604800);
+//       $info=$_GET;
+//        $lkey='zk_token'.$info['id'];
+//        Redis::set($lkey,$info['token']);
+//        Redis::expire($lkey,604800);
 
-        echo '加入缓存成功';
-        */
+//        echo '加入缓存成功';
         print_r($_GET);
     }
 
-    /**
-     * @param Request $request
-     * 登陆
-     */
-    public function logInfo(Request $request){
-        $user_name=$request->input('user_name');
-        $pass=$request->input('pass');
-
-        $data=[
-            'user_name'=>$user_name,
-            'pass'=>$pass,
-        ];
-
-        $str=json_encode($data);
-//        $url='http://lumen.1809a.com/logInfo';
-        $url='http://alili.gege12.vip/logInfo';
-        $urlInfo=curl_init();
-        curl_setopt($urlInfo,CURLOPT_URL,$url);
-        curl_setopt($urlInfo,CURLOPT_POST,1);
-        //禁止浏览器输出 变量
-        curl_setopt($urlInfo, CURLOPT_RETURNTRANSFER,1);
-        curl_setopt($urlInfo,CURLOPT_POSTFIELDS,$str);
-        $cc=curl_exec($urlInfo);
-        print_r($cc);
-        curl_close($urlInfo);
-    }
 
     public function a(){
         return view('reg.a');

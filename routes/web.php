@@ -46,8 +46,15 @@ Route::get('sign','One\OneController@sign');
 
 
 //5.13周考
-Route::get('regindex','Register\RegController@regindex');
+//Route::get('regindex','Register\RegController@regindex');
+//Route::post('regInfo','Register\RegController@regInfo');
+//Route::get('token','Register\RegController@token');
+//Route::get('a','Register\RegController@a');
+
+
+//5.15
 Route::post('regInfo','Register\RegController@regInfo');
-Route::get('token','Register\RegController@token');
-Route::get('a','Register\RegController@a');
+Route::post('logInfo','Register\RegController@logInfo');
+Route::get('center','Center\CenterController@center')->Middleware('token');
+
 
