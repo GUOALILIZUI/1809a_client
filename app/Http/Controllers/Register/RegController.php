@@ -76,8 +76,8 @@ class RegController extends Controller
 
         $str=json_encode($data);
 //        echo $str;die;
-        $url='http://lumen.1809a.com/logInfo';
-//        $url='http://alili.gege12.vip/logInfo';
+//        $url='http://lumen.1809a.com/logInfo';
+        $url='http://alili.gege12.vip/logInfo';
         $urlInfo=curl_init();
         curl_setopt($urlInfo,CURLOPT_URL,$url);
         curl_setopt($urlInfo,CURLOPT_POST,1);
