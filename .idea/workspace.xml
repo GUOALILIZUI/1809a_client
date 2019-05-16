@@ -86,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="RegController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Register/RegController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="653">
+              <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
               <folding>
                 <element signature="e#49#77#0#PHP" expanded="true" />
                 <element signature="e#233#303#0#PHP" expanded="false" />
@@ -121,7 +121,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CenterController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CenterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Center/CenterController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/../api/1809a_api/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Register/RegController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Center/CenterController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Register/RegController.php" />
       </list>
     </option>
   </component>
@@ -595,12 +595,12 @@
       <workItem from="1557707959238" duration="9842000" />
       <workItem from="1557728915891" duration="4381000" />
       <workItem from="1557917096163" duration="7140000" />
-      <workItem from="1557966431446" duration="1750000" />
+      <workItem from="1557966431446" duration="3334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64398000" />
+    <option name="totallyTimeSpent" value="65982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,25 +976,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Register/RegController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#49#77#0#PHP" expanded="true" />
-            <element signature="e#233#303#0#PHP" expanded="false" />
-            <element signature="e#1278#1452#0#PHP" expanded="false" />
-            <element signature="e#2277#2333#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Center/CenterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
             <element signature="e#47#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Register/RegController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+          <folding>
+            <element signature="e#49#77#0#PHP" expanded="true" />
+            <element signature="e#233#303#0#PHP" expanded="false" />
+            <element signature="e#1278#1452#0#PHP" expanded="false" />
+            <element signature="e#2277#2333#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
