@@ -9,7 +9,10 @@ class CenterController extends Controller
 {
 
     public function center(Request $request){
-        $url='http://lumen.1809a.com/center';
+        $token=$_GET['token'];
+        $id=$_GET['id'];
+        echo $id;die;
+        $url='http://lumen.1809a.com/center?';
         $ch=curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HEADER, 0);
