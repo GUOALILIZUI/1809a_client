@@ -16,21 +16,21 @@ class Token
      */
     public function handle($request, Closure $next){
         $token=$_GET['token'];
+//        echo $token;die;
+
         $id=$_GET['id'];
         $lkey='hb_token'.$id;
         $redisToken=Redis::get($lkey);
+
         if($token!=$redisToken){
             $res=[
                 'errno'=>1,
                 'msg'=>'token无效，请重新登录',
             ];
-           $response=json_encode($res,JSON_UNESCAPED_UNICODE);
-        }else{
-            $response=$next($request);
+           return $res;
         }
 
-
-        return $response;
+        return $next($request);
 
 
     }
