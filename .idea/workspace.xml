@@ -9,11 +9,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/AccountController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/AccountController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Center/CenterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Center/CenterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/GoodsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/GoodsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/One/One1Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/One/One1Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/One/OneController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/One/OneController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Register/Reg1Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Register/Reg1Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Register/RegController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Register/RegController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserReg1Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserReg1Controller.php" />
@@ -24,6 +29,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RequestTimes.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RequestTimes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Token.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Token.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/CartModel.php" afterPath="$PROJECT_DIR$/app/Model/CartModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/GoodsModel.php" afterPath="$PROJECT_DIR$/app/Model/GoodsModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/OrderModel.php" afterPath="$PROJECT_DIR$/app/Model/OrderModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/UserModel.php" afterPath="$PROJECT_DIR$/app/Model/UserModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/ZkUserModel.php" afterPath="$PROJECT_DIR$/app/Model/ZkUserModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artisan" afterPath="$PROJECT_DIR$/artisan" />
@@ -86,11 +94,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="672">
               <caret line="68" column="10" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;a7a3f9d3-191c-406d-9ea4-111381907dae&gt;/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PayController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="152" column="55" lean-forward="false" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="55" />
+              <folding>
+                <element signature="e#44#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,13 +168,14 @@
         <option value="$PROJECT_DIR$/storage/alipay/api_public.pem" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Center/CenterController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/One/OneController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Account/AccountController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php" />
+        <option value="&lt;a7a3f9d3-191c-406d-9ea4-111381907dae&gt;/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php" />
       </list>
     </option>
   </component>
@@ -634,11 +675,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -762,12 +808,12 @@
       <workItem from="1557993996272" duration="4375000" />
       <workItem from="1558050761507" duration="2739000" />
       <workItem from="1558061576667" duration="12115000" />
-      <workItem from="1558144643876" duration="17904000" />
+      <workItem from="1558144643876" duration="18532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108614000" />
+    <option name="totallyTimeSpent" value="109242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -779,9 +825,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29166666" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1151,24 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2050">
-          <caret line="168" column="2" lean-forward="false" selection-start-line="168" selection-start-column="2" selection-end-line="168" selection-end-column="2" />
-          <folding>
-            <element signature="e#44#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Order/OrderController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1184,6 +1213,24 @@
         <state relative-caret-position="672">
           <caret line="68" column="10" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="152" column="55" lean-forward="false" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="55" />
+          <folding>
+            <element signature="e#44#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

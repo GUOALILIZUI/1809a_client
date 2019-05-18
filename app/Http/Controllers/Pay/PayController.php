@@ -18,7 +18,7 @@ class PayController extends Controller
     {
         $this->app_id = env('ALIPAY_APPID');
         $this->gate_way = 'https://openapi.alipaydev.com/gateway.do';
-//        $this->notify_url = env('ALIPAY_NOTIFY_URL');
+        $this->notify_url = env('ALIPAY_NOTIFY_URL');
         $this->return_url = env('ALIPAY_RETURN_URL');
         $this->rsaPrivateKeyFilePath = storage_path('app/alipay/private.pem');    //应用私钥
         $this->aliPubKey = storage_path('app/alipay/public.pem'); //支付宝公钥
