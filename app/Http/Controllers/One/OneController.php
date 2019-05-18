@@ -29,6 +29,7 @@ class OneController extends Controller
        $newPass=base64_encode($oldPass);
 
         $url='http://lumen_1809a.com/info';
+
         // print_r($info);exit;
         $dataInit=curl_init();
         curl_setopt($dataInit,CURLOPT_URL,$url);

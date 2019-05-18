@@ -33,7 +33,7 @@ Route::get('cenTer','User\UserRegController@cenTer')->Middleware(['centent','req
 
 
 //资源路由
-Route::resource('goods',GoodsController::class);
+Route::resource('Goods',GoodsController::class);
 
 
 
@@ -56,5 +56,17 @@ Route::get('sign','One\OneController@sign');
 Route::post('regInfo','Register\RegController@regInfo');
 Route::post('logInfo','Register\RegController@logInfo');
 Route::get('center','Center\CenterController@center')->Middleware('token');
+
+
+
+//商品 5.16
+Route::get('goodslist','Goods\GoodsController@goodsList');
+Route::post('centent','Goods\GoodsController@cenTent');
+Route::post('cart','Cart\CartController@cart');
+Route::post('cartlist','Cart\CartController@cartList');
+Route::post('account','Account\AccountController@account');
+Route::post('orderlist','Order\OrderController@orderList');
+Route::get('pay','Pay\PayController@pay');
+
 
 

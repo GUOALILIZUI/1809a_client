@@ -92,4 +92,7 @@ class RegController extends Controller
     public function a(){
         return view('reg.a');
     }
+
+
+
 }
