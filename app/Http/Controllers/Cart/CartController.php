@@ -44,6 +44,7 @@ class CartController extends Controller
     public function cartList(Request $request){
         $uid=$request->input('uid');
         $cartInfo=CartModel::where(['uid'=>$uid,'cart_status'=>1])->get();
+//        print_r($cartInfo);die;
         $str=json_encode($cartInfo);
 //        $url='http://lumen.1809a.com/cartlist';
         $url='http://alili.gege12.vip/cartlist';

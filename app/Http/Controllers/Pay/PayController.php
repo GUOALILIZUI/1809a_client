@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Pay;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
+use App\Model\OrderModel;
 
 class PayController extends Controller
 {
@@ -41,6 +42,7 @@ class PayController extends Controller
 
         //验证订单状态 是否已支付 是否是有效订单
         $order_info = DB::table('order')->where(['order_id'=>$order_id])->first();
+//        print_r($order_info);die;
         //判断订单是否被支付
         if($order_info->order_pay_status!= 1){
             die("订单已支付，请勿重复支付");
@@ -149,8 +151,21 @@ class PayController extends Controller
     public function notify()
     {
         $p = json_encode($_POST);
+//        $p=file_get_contents("php://input");
         $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$p . " \n";
-        file_put_contents('logs/alipay_notify',$log_str,FILE_APPEND);
+        file_put_contents('/tmp/alipay_notify.log',$log_str,FILE_APPEND);
+        $data=json_decode($p,true);
+        if($data['trade_status']=='TRADE_SUCCESS'){
+            $where=[
+                'order_id'=>$data['out_trade_no'],
+            ];
+            DB::table('order')->where($where)->update(['order_pay_status'=>2]);
+            DB::table('order_detail')->where($where)->update(['pay_status'=>2]);
+//            DB::table('cart')->where($where)->update(['pay_status'=>2]);
+
+
+        }
+
         echo 'success';
         //TODO 验签 更新订单状态
     }

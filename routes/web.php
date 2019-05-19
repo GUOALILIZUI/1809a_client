@@ -67,6 +67,8 @@ Route::post('cartlist','Cart\CartController@cartList');
 Route::post('account','Account\AccountController@account');
 Route::post('orderlist','Order\OrderController@orderList');
 Route::get('pay','Pay\PayController@pay');
+Route::post('notify','Pay\PayController@notify');
+Route::get('aliReturn','Pay\PayController@aliReturn');
 
 
 

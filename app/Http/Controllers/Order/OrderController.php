@@ -17,9 +17,9 @@ class OrderController extends Controller
         
         $info=DB::table('order')
             ->join('order_detail','order.order_id','=','order_detail.order_id')
-            ->where(['order_id'=>$order_id,'order_pay_status'=>1)
+            ->where(['order.order_id'=>$order_id,'order_pay_status'=>1])
             ->first();
-        print_r($info);die;
+//        print_r($info);die;
 
         return $info = ['errno'=>0, 'pay'=>$info,];
 
